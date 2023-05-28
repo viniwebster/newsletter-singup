@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './variaveis';
+
+*{
+    font-family: $primary-font;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin inputWidth(){
+    padding: 1rem;
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: .7px;
+    border-color: rgb(213, 210, 205);
+}

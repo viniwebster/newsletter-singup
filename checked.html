@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/components/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <main>
+
+    <section>
+      <div class="checked-container">
+        <div class="checked-infos"> 
+            <img class="img-success" src="./assets/images/icon-success.svg" alt="" srcset="">          
+          <h1 class="title">
+            Thanks for subscribing!
+          </h1>
+
+          <p class="subtitle">
+            A confirmation email has been sent to <span class="email" id="email-checked">ash@loremcompany.com.</span>  
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+
+          <input type="submit" class="submit" id="btnBack" value="Dismiss message" onclick="backToHome()">
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="./script/btnBack.js" type="module"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

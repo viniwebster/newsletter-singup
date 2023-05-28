@@ -1,0 +1,87 @@
+main{
+    min-height: 100vh;
+    width: 100vw;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    background-color: $neutral-color-secundary;
+}
+
+.container{
+    display: flex;
+    padding: 1.5rem;
+    background-color: $white;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 50px $neutral-color;
+}
+
+.container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4.5rem 2rem;
+    flex: 1;
+
+    .title{
+        font-size: 4rem;
+        font-weight: 700;
+        color: $neutral-color-secundary;
+    }
+    
+    .subtitle{
+        font-size: 1.25rem;
+        color: $neutral-color-secundary;
+    }
+
+    .infos__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       .infos__item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       }
+    }
+
+    .form__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title-form_container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: $neutral-color-secundary;
+            .error{
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+
+        #email{
+            @include inputWidth()
+        }
+
+    }
+}
+
+
+.submit{
+    @include inputWidth();
+    background-color: $neutral-color;
+    color: white;
+    font-weight: 700;
+    &:hover{
+        cursor: pointer;
+        transition: .5s;
+        background-color: $primary-color;
+    }
+}
+
+/* .container__image{
+    background: url('../../assets/images/illustration-sign-up-desktop.svg');
+    flex: 1;
+} */

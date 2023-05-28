@@ -1,0 +1,47 @@
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80vw;
+        min-height: 90vh;
+    }
+
+    .container-left{
+        gap: 30px;
+        .title{
+            font-size: 3rem;
+        }
+    }
+
+    .container__image{
+        flex: 1;
+        min-height: 30vh;
+        width: 100%;
+        background: url('../../assets/images/illustration-sign-up-mobile.svg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    main{
+        padding: 0;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .container__image{
+        min-height: 40vh;
+        border-radius: 0 0 20px 20px;
+    }
+}
