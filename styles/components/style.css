@@ -83,6 +83,7 @@ main {
   background-color: hsl(234, 29%, 20%);
   color: white;
   font-weight: 700;
+  width: 100%;
 }
 .submit:hover {
   cursor: pointer;
